@@ -44,15 +44,15 @@ export const Counter:React.FC<CounterProps> = ({title, initialValue, operation})
     let operationButton;
     if(operation == "increment") {
         operationButton = (<Button variant={"outline"} onClick={increment}>
-            Жми <Plus />
+            Жми <Plus className="stroke-green-500" />
         </Button>)
     } else if (operation == "decrement") {
         operationButton = (<Button variant={"outline"} onClick={decrement}>
-            Жми <Minus />
+            Жми <Minus  className="stroke-red-500" />
         </Button>)
     } else if (operation == "multiply") {
         operationButton = (<Button variant={"outline"} onClick={multiply}>
-            Жми <Asterisk />
+            Жми <Asterisk   className="stroke-blue-500" />
         </Button>)
     }
 
