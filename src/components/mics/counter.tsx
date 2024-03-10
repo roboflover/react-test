@@ -33,7 +33,12 @@ export const Counter:React.FC<CounterProps> = ({title, initialValue, operation})
     }
 
     const reset = () => {
-        setCount(0);
+        if(operation === "multiply"){
+            setCount(1);
+        } else {
+            setCount(0);
+        }
+
     }
   
     let operationButton;
